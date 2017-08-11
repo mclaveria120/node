@@ -29,7 +29,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="/">OAuth in Action: <span class="label label-primary">OAuth Client</label></a>
+          <a class="navbar-brand" href="/">OAuth in Action: <span class="label label-primary">OAuth Client</span></a>
         </div>
       </div>
     </nav>
@@ -37,14 +37,10 @@
     <div class="container">
 
       <div class="jumbotron">
-		  
-		  <div class="alert alert-info" role="alert">This is the shell for the <strong>OAuth Client</strong>. This provides no actual functionality.</div>
-		  
 		  <p>Access token value: <span class="label label-danger"><%- access_token ? access_token : 'NONE' %></span></p>
 		  <p>Scope value: <span class="label label-danger"><%- scope ? scope : 'NONE' %></span></p>
-		  <p>Refresh token value: <span class="label label-danger"><%- refresh_token ? refresh_token : 'NONE' %></span></p>
-		  <button class="btn btn-default" href="/authorize" disabled>Get OAuth Token</button> 
-		  <button class="btn btn-default" href="/fetch_resource" disabled>Get Protected Resource</button> 
+		  <a class="btn btn-default" href="/authorize">Get OAuth Token</a> 
+		  <a class="btn btn-default" href="/fetch_resource">Get Protected Resource</a> 
       </div>
 
     </div><!-- /.container -->
